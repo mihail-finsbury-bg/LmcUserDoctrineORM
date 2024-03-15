@@ -1,58 +1,59 @@
 {
-    "name": "lm-commons/lmc-user-doctrine-orm",
-    "description": "Doctrine2 ORM storage adapter for LmcUser.",
-    "type": "library",
-    "license": "BSD-3-Clause",
-    "keywords": [
-        "laminas", "LmcUser"
-    ],
-    "homepage": "https://github.com/LM-Commons/LmcUserDoctrineORM",
-    "authors": [
-        {
-            "name": "Evan Coury",
-            "email": "me@evancoury.com",
-            "homepage": "http://blog.evan.pro/"
-        },
-        {
-            "name": "Kyle Spraggs",
-            "email": "theman@spiffyjr.me",
-            "homepage": "http://www.spiffyjr.me/"
-        },
-        {
-            "name": "Alexander Zamponi",
-            "email": "alex@zamponi.biz",
-            "homepage": "https://www.zamponi.biz/"
-        }
-    ],
-    "require": {
-        "php": ">=7.3",
-        "lm-commons/lmc-user": "^3.3.3",
-        "doctrine/doctrine-orm-module": "^4.0 || ^5.0"
-    },
-    "require-dev": {
-        "laminas/laminas-coding-standard": "^1.0.0",
-        "phpspec/prophecy-phpunit": "^2.0",
-        "phpspec/prophecy": "^1.12",
-        "phpunit/phpunit": "^9.3"
-    },
-    "autoload": {
-        "psr-4": {
-            "LmcUserDoctrineORM\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "LmcUserDoctrineORMTest\\": "test/"
-        }
-    },
-    "scripts": {
-        "check": [
-            "@cs-check",
-            "@test"
-        ],
-        "cs-check": "phpcs",
-        "cs-fix": "phpcbf",
-        "test": "phpunit --colors=always",
-        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
-    }
+	"name": "mihail-finsbury-bg/lmc-user-doctrine-orm",
+	"description": "Doctrine2 ORM storage adapter for LmcUser.",
+	"type": "library",
+	"license": "BSD-3-Clause",
+	"keywords": [
+		"laminas",
+		"LmcUser"
+	],
+	"homepage": "https://github.com/LM-Commons/LmcUserDoctrineORM",
+	"authors": [
+		{
+			"name": "Evan Coury",
+			"email": "me@evancoury.com",
+			"homepage": "http://blog.evan.pro/"
+		},
+		{
+			"name": "Kyle Spraggs",
+			"email": "theman@spiffyjr.me",
+			"homepage": "http://www.spiffyjr.me/"
+		},
+		{
+			"name": "Alexander Zamponi",
+			"email": "alex@zamponi.biz",
+			"homepage": "https://www.zamponi.biz/"
+		}
+	],
+	"require": {
+		"php": ">=7.3",
+		"lm-commons/lmc-user": "^3.3.3",
+		"doctrine/doctrine-orm-module": "^4.0 || ^5.0 || ^6.0"
+	},
+	"require-dev": {
+		"laminas/laminas-coding-standard": "^1.0.0",
+		"phpspec/prophecy-phpunit": "^2.0",
+		"phpspec/prophecy": "^1.12",
+		"phpunit/phpunit": "^9.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"LmcUserDoctrineORM\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"LmcUserDoctrineORMTest\\": "test/"
+		}
+	},
+	"scripts": {
+		"check": [
+			"@cs-check",
+			"@test"
+		],
+		"cs-check": "phpcs",
+		"cs-fix": "phpcbf",
+		"test": "phpunit --colors=always",
+		"test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+	}
 }
